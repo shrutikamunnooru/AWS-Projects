@@ -1,0 +1,31 @@
+order_id,customer_name,product,category,quantity,price,city,order_date
+ORD001,Rahul Sharma,Wireless Mouse,Electronics,2,599.00,Mumbai,2026-03-01
+ORD002,Priya Patel,Notebook Set,Stationery,5,120.00,Delhi,2026-03-01
+ORD003,Amit Kumar,USB Cable,Electronics,3,199.00,Bangalore,2026-03-01
+ORD004,Sneha Reddy,Desk Lamp,Home,1,1450.00,Hyderabad,2026-03-02
+ORD005,Vikram Singh,Pen Drive 64GB,Electronics,2,485.00,Delhi,2026-03-02
+ORD006,Anjali Nair,Sticky Notes,Stationery,10,45.00,Chennai,2026-03-02
+ORD007,Rohit Joshi,Bluetooth Speaker,Electronics,1,2399.00,Mumbai,2026-03-03
+ORD008,Kavita Menon,Water Bottle,Home,4,350.00,Bangalore,2026-03-03
+ORD009,Suresh Yadav,Markers Set,Stationery,6,80.00,Delhi,2026-03-03
+ORD010,Deepa Iyer,Phone Stand,Electronics,2,299.00,Chennai,2026-03-04
+ORD011,Manish Gupta,Table Clock,Home,1,899.00,Mumbai,2026-03-04
+ORD012,Pooja Verma,A4 Sheets 500pc,Stationery,3,250.00,Hyderabad,2026-03-04
+ORD013,Arjun Das,Earphones,Electronics,3,799.00,Bangalore,2026-03-05
+ORD014,Neha Kapoor,Cushion Cover,Home,5,199.00,Delhi,2026-03-05
+ORD015,Rajesh Pillai,Highlighters,Stationery,8,60.00,Chennai,2026-03-05
+ORD016,Divya Sharma,Power Bank,Electronics,1,1299.00,Mumbai,2026-03-06
+ORD017,Karan Mehta,Wall Hook Set,Home,3,150.00,Hyderabad,2026-03-06
+ORD018,Swati Jain,Gel Pens 10pc,Stationery,4,110.00,Delhi,2026-03-06
+ORD019,Nikhil Rao,Laptop Stand,Electronics,1,1850.00,Bangalore,2026-03-07
+ORD020,Megha Tiwari,Photo Frame,Home,2,399.00,Mumbai,2026-03-07
+ORD021,Sanjay Mishra,Diary 2026,Stationery,2,180.00,Chennai,2026-03-07
+ORD022,Ritika Saxena,HDMI Cable,Electronics,2,349.00,Delhi,2026-03-08
+ORD023,Arun Nambiar,Towel Set,Home,3,550.00,Hyderabad,2026-03-08
+ORD024,Fatima Khan,Sketch Pens,Stationery,5,95.00,Mumbai,2026-03-08
+ORD025,Gaurav Choudhary,Webcam HD,Electronics,1,2199.00,Bangalore,2026-03-09
+ORD026,Lakshmi Prasad,Soap Dispenser,Home,2,320.00,Chennai,2026-03-09
+ORD027,Vivek Thakur,Whiteboard Marker,Stationery,12,35.00,Delhi,2026-03-09
+ORD028,Isha Malhotra,Mouse Pad,Electronics,4,199.00,Mumbai,2026-03-10
+ORD029,Pranav Kulkarni,Door Mat,Home,2,275.00,Hyderabad,2026-03-10
+ORD030,Tanvi Deshmukh,Stapler Set,Stationery,3,85.00,Bangalore,2026-03-10
