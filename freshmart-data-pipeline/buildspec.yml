@@ -1,0 +1,81 @@
+version: 0.2
+
+# CodeBuild reads this file and runs each phase in order.
+# Think of it as a recipe that CodeBuild follows every time main branch is pushed.
+
+phases:
+
+  install:
+    runtime-versions:
+      python: 3.11
+    commands:
+      - echo "Installing dependencies for each Lambda..."
+
+      # Install pandas into the csv_reader package directory
+      - pip install -r lambdas/csv_reader/requirements.txt -t lambdas/csv_reader/package/
+
+      # Install pandas into the transformer package directory
+      - pip install -r lambdas/transformer/requirements.txt -t lambdas/transformer/package/
+
+      # Orchestrator has no external deps (only boto3, which is built into Lambda runtime)
+      - echo "Orchestrator has no external dependencies to install"
+
+  pre_build:
+    commands:
+      - echo "Running pre-build validation..."
+
+      # Check that all required Lambda files exist before we try to zip them
+      - test -f lambdas/csv_reader/lambda_function.py   || (echo "ERROR: csv_reader lambda_function.py missing" && exit 1)
+      - test -f lambdas/orchestrator/lambda_function.py || (echo "ERROR: orchestrator lambda_function.py missing" && exit 1)
+      - test -f lambdas/transformer/lambda_function.py  || (echo "ERROR: transformer lambda_function.py missing" && exit 1)
+      - test -f scripts/deploy.sh                        || (echo "ERROR: deploy.sh missing" && exit 1)
+
+      # Install flake8 and lint all Lambda code (catches syntax errors, undefined vars)
+      - pip install flake8 --quiet
+      - flake8 lambdas/csv_reader/lambda_function.py   --max-line-length=120
+      - flake8 lambdas/orchestrator/lambda_function.py --max-line-length=120
+      - flake8 lambdas/transformer/lambda_function.py  --max-line-length=120
+
+      - echo "Pre-build validation passed!"
+
+  build:
+    commands:
+      - echo "Packaging Lambda functions as zip files..."
+
+      # --- Package csv_reader ---
+      # Copy lambda code into the package dir, then zip everything together
+      - cp lambdas/csv_reader/lambda_function.py lambdas/csv_reader/package/
+      - cd lambdas/csv_reader/package && zip -r ../../../artifacts/csv_reader.zip . && cd ../../..
+
+      # --- Package orchestrator (no external deps, just zip the .py file) ---
+      - mkdir -p artifacts
+      - zip -j artifacts/orchestrator.zip lambdas/orchestrator/lambda_function.py
+
+      # --- Package transformer ---
+      - cp lambdas/transformer/lambda_function.py lambdas/transformer/package/
+      - cd lambdas/transformer/package && zip -r ../../../artifacts/transformer.zip . && cd ../../..
+
+      - echo "All Lambda packages created successfully"
+      - ls -lh artifacts/
+
+  post_build:
+    commands:
+      - echo "Deploying Lambda functions to AWS..."
+
+      # Make deploy script executable
+      - chmod +x scripts/deploy.sh
+
+      # Deploy each Lambda using the deploy script
+      - scripts/deploy.sh csv_reader_lambda     artifacts/csv_reader.zip
+      - scripts/deploy.sh pipeline_orchestrator artifacts/orchestrator.zip
+      - scripts/deploy.sh data_transformer_worker artifacts/transformer.zip
+
+      - echo "All Lambda functions deployed successfully!"
+
+artifacts:
+  # Save the zip files as build artifacts (useful for audit trail)
+  files:
+    - artifacts/csv_reader.zip
+    - artifacts/orchestrator.zip
+    - artifacts/transformer.zip
+# cicd setup

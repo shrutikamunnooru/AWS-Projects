@@ -1,0 +1,16 @@
+# Lambda dependency packages (installed locally, not committed)
+lambdas/*/package/
+
+# Build artifacts
+artifacts/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store
