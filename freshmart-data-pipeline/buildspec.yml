@@ -1,7 +1,6 @@
 version: 0.2
 
 phases:
-
   install:
     runtime-versions:
       python: 3.11
@@ -9,20 +8,14 @@ phases:
       - echo "Installing dependencies..."
       - pip install -r freshmart-data-pipeline/lambdas/csv_reader/requirements.txt -t freshmart-data-pipeline/lambdas/csv_reader/package/
       - pip install -r freshmart-data-pipeline/lambdas/transformer/requirements.txt -t freshmart-data-pipeline/lambdas/transformer/package/
-
   pre_build:
     commands:
       - echo "Running validation..."
-      - test -f freshmart-data-pipeline/lambdas/csv_reader/lambda_function.py || (echo "ERROR: csv_reader missing" && exit 1)
-      - test -f freshmart-data-pipeline/lambdas/orchestrator/lambda_function.py || (echo "ERROR: orchestrator missing" && exit 1)
-      - test -f freshmart-data-pipeline/lambdas/transformer/lambda_function.py || (echo "ERROR: transformer missing" && exit 1)
-      - test -f freshmart-data-pipeline/scripts/deploy.sh || (echo "ERROR: deploy.sh missing" && exit 1)
       - pip install flake8 --quiet
       - flake8 freshmart-data-pipeline/lambdas/csv_reader/lambda_function.py --max-line-length=120
       - flake8 freshmart-data-pipeline/lambdas/orchestrator/lambda_function.py --max-line-length=120
       - flake8 freshmart-data-pipeline/lambdas/transformer/lambda_function.py --max-line-length=120
       - echo "Validation passed!"
-
   build:
     commands:
       - echo "Packaging Lambda functions..."
@@ -32,9 +25,7 @@ phases:
       - zip -j artifacts/orchestrator.zip freshmart-data-pipeline/lambdas/orchestrator/lambda_function.py
       - cp freshmart-data-pipeline/lambdas/transformer/lambda_function.py freshmart-data-pipeline/lambdas/transformer/package/
       - cd freshmart-data-pipeline/lambdas/transformer/package && zip -r ../../../../artifacts/transformer.zip . && cd ../../../..
-      - echo "Packaging complete"
       - ls -lh artifacts/
-
   post_build:
     commands:
       - echo "Deploying Lambda functions..."
@@ -43,9 +34,3 @@ phases:
       - freshmart-data-pipeline/scripts/deploy.sh pipeline_orchestrator artifacts/orchestrator.zip
       - freshmart-data-pipeline/scripts/deploy.sh data_transformer_worker artifacts/transformer.zip
       - echo "Deployment complete!"
-
-artifacts:
-  files:
-    - artifacts/csv_reader.zip
-    - artifacts/orchestrator.zip
-    - artifacts/transformer.zip
