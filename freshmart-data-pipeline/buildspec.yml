@@ -78,3 +78,4 @@ artifacts:
     - artifacts/csv_reader.zip
     - artifacts/orchestrator.zip
     - artifacts/transformer.zip
+# cicd setup
