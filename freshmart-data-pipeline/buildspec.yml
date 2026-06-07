@@ -6,8 +6,8 @@ phases:
       python: 3.11
     commands:
       - echo "Installing dependencies..."
-      - pip install -r freshmart-data-pipeline/lambdas/csv_reader/requirements.txt -t freshmart-data-pipeline/lambdas/csv_reader/package/
-      - pip install -r freshmart-data-pipeline/lambdas/transformer/requirements.txt -t freshmart-data-pipeline/lambdas/transformer/package/
+      - pip install -r freshmart-data-pipeline/lambdas/csv_reader/requirements.txt -t freshmart-data-pipeline/lambdas/csv_reader/package/ --platform manylinux2014_x86_64 --only-binary=:all:
+      - pip install -r freshmart-data-pipeline/lambdas/transformer/requirements.txt -t freshmart-data-pipeline/lambdas/transformer/package/ --platform manylinux2014_x86_64 --only-binary=:all:
   pre_build:
     commands:
       - echo "Running validation..."
