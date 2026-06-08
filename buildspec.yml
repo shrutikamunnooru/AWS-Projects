@@ -1,11 +1,9 @@
 version: 0.2
 phases:
-  install:
+  build:
     commands:
       - pip install pandas==2.2.2 -t freshmart-data-pipeline/lambdas/csv_reader/package/ --platform manylinux2014_x86_64 --only-binary=:all:
       - pip install pandas==2.2.2 -t freshmart-data-pipeline/lambdas/transformer/package/ --platform manylinux2014_x86_64 --only-binary=:all:
-  build:
-    commands:
       - mkdir -p artifacts
       - cp freshmart-data-pipeline/lambdas/csv_reader/lambda_function.py freshmart-data-pipeline/lambdas/csv_reader/package/
       - cd freshmart-data-pipeline/lambdas/csv_reader/package && zip -r ../../../../artifacts/csv_reader.zip . && cd ../../../..
