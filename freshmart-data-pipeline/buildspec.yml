@@ -1,0 +1,20 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - mkdir -p freshmart-data-pipeline/lambdas/csv_reader/package
+      - mkdir -p freshmart-data-pipeline/lambdas/transformer/package
+      - mkdir -p artifacts
+      - pip install pandas -t freshmart-data-pipeline/lambdas/csv_reader/package/ --platform manylinux2014_x86_64 --python-version 3.11 --only-binary=:all: --index-url https://pypi.org/simple/
+      - pip install pandas -t freshmart-data-pipeline/lambdas/transformer/package/ --platform manylinux2014_x86_64 --python-version 3.11 --only-binary=:all: --index-url https://pypi.org/simple/
+      - cp freshmart-data-pipeline/lambdas/csv_reader/lambda_function.py freshmart-data-pipeline/lambdas/csv_reader/package/
+      - cd freshmart-data-pipeline/lambdas/csv_reader/package && zip -r ../../../../artifacts/csv_reader.zip . && cd ../../../..
+      - zip -j artifacts/orchestrator.zip freshmart-data-pipeline/lambdas/orchestrator/lambda_function.py
+      - cp freshmart-data-pipeline/lambdas/transformer/lambda_function.py freshmart-data-pipeline/lambdas/transformer/package/
+      - cd freshmart-data-pipeline/lambdas/transformer/package && zip -r ../../../../artifacts/transformer.zip . && cd ../../../..
+  post_build:
+    commands:
+      - chmod +x freshmart-data-pipeline/scripts/deploy.sh
+      - freshmart-data-pipeline/scripts/deploy.sh csv_reader_lambda artifacts/csv_reader.zip
+      - freshmart-data-pipeline/scripts/deploy.sh pipeline_orchestrator artifacts/orchestrator.zip
+      - freshmart-data-pipeline/scripts/deploy.sh data_transformer_worker artifacts/transformer.zip
