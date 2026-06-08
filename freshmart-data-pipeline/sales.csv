@@ -1,0 +1,201 @@
+invoice_id,branch,city,product_line,unit_price,quantity,date,payment,rating
+INV-00001,A,Kanpur,Fashion,34.89,8,2025-11-27,Cash,1.4
+INV-00002,A,Kanpur,Health,39.84,8,2025-01-27,Cash,5.9
+INV-00003,B,Kanpur,Electronics,75.86,9,2025-08-27,UPI,4.8
+INV-00004,B,Lucknow,Health,84.18,9,2025-09-07,Cash,8.1
+INV-00005,A,Lucknow,Health,97.44,9,2025-10-18,Cash,9.9
+INV-00006,C,Agra,Electronics,26.95,7,2025-02-10,Credit Card,9.3
+INV-00007,C,Agra,Health,76.06,3,2025-09-21,UPI,7.3
+INV-00008,A,Kanpur,Health,35.72,9,2025-07-26,UPI,5.8
+INV-00009,A,Lucknow,Grocery,85.94,5,2025-02-01,UPI,3.8
+INV-00010,B,Kanpur,Fashion,59.83,3,2025-12-18,Credit Card,9.1
+INV-00011,B,Kanpur,Fashion,78.24,2,2025-11-02,UPI,4.8
+INV-00012,B,Lucknow,Grocery,32.99,2,2025-04-16,Credit Card,4.5
+INV-00013,A,Agra,Health,91.17,2,2025-10-11,Cash,2.7
+INV-00014,B,Agra,Health,12.36,4,2025-02-06,Credit Card,4.7
+INV-00015,C,Kanpur,Health,65.74,2,2025-08-11,Credit Card,2.1
+INV-00016,A,Agra,Grocery,82.31,3,2025-02-16,UPI,7.5
+INV-00017,C,Agra,Fashion,61.83,4,2025-10-24,Credit Card,1.0
+INV-00018,B,Agra,Electronics,34.06,6,2025-02-12,UPI,6.8
+INV-00019,B,Kanpur,Electronics,93.33,3,2025-11-25,UPI,3.2
+INV-00020,B,Kanpur,Grocery,65.71,7,2025-05-10,Credit Card,9.8
+INV-00021,A,Agra,Electronics,45.49,4,2025-11-25,UPI,4.3
+INV-00022,A,Agra,Electronics,23.62,6,2025-05-18,Cash,3.0
+INV-00023,A,Agra,Grocery,70.58,7,2025-06-12,Credit Card,8.6
+INV-00024,A,Lucknow,Fashion,15.23,7,2025-04-06,Credit Card,7.9
+INV-00025,C,Agra,Health,40.03,10,2025-03-25,UPI,7.1
+INV-00026,C,Kanpur,Grocery,87.88,1,2025-05-18,Credit Card,1.6
+INV-00027,C,Kanpur,Fashion,67.84,8,2025-10-14,Cash,5.8
+INV-00028,A,Kanpur,Health,44.12,1,2025-11-24,Cash,5.0
+INV-00029,C,Agra,Fashion,43.6,8,2025-10-21,Credit Card,9.4
+INV-00030,C,Lucknow,Grocery,84.9,3,2025-07-21,UPI,2.7
+INV-00031,C,Kanpur,Electronics,71.19,4,2025-06-22,Cash,2.1
+INV-00032,A,Agra,Electronics,30.79,1,2025-06-19,Cash,1.8
+INV-00033,A,Agra,Health,57.22,2,2025-10-27,UPI,4.4
+INV-00034,B,Lucknow,Fashion,28.65,6,2025-07-16,Credit Card,1.2
+INV-00035,A,Agra,Fashion,50.51,1,2025-09-25,UPI,9.7
+INV-00036,C,Lucknow,Fashion,13.24,1,2025-07-21,Credit Card,4.4
+INV-00037,B,Lucknow,Grocery,80.57,9,2025-12-13,Credit Card,8.6
+INV-00038,B,Agra,Electronics,33.29,9,2025-05-02,Credit Card,4.9
+INV-00039,B,Agra,Health,27.84,1,2025-03-04,Cash,6.5
+INV-00040,B,Kanpur,Electronics,67.94,8,2025-06-27,UPI,4.6
+INV-00041,A,Agra,Fashion,94.81,5,2025-09-18,Cash,9.1
+INV-00042,B,Kanpur,Grocery,70.97,6,2025-04-09,UPI,8.2
+INV-00043,C,Kanpur,Electronics,45.84,5,2025-06-23,UPI,9.2
+INV-00044,A,Kanpur,Health,67.86,1,2025-09-15,Credit Card,4.9
+INV-00045,A,Agra,Grocery,68.93,10,2025-05-13,UPI,9.6
+INV-00046,A,Lucknow,Fashion,14.61,10,2025-08-19,Credit Card,6.1
+INV-00047,A,Lucknow,Fashion,69.51,5,2025-10-12,UPI,8.0
+INV-00048,B,Agra,Electronics,90.1,10,2025-11-10,Cash,3.4
+INV-00049,C,Agra,Fashion,29.44,5,2025-04-12,Credit Card,9.2
+INV-00050,B,Kanpur,Fashion,49.02,10,2025-01-18,Credit Card,4.0
+INV-00051,A,Kanpur,Electronics,68.8,9,2025-06-09,Credit Card,4.6
+INV-00052,A,Kanpur,Grocery,18.15,1,2025-10-13,UPI,1.3
+INV-00053,B,Kanpur,Fashion,92.51,2,2025-11-14,Credit Card,2.3
+INV-00054,B,Lucknow,Fashion,73.39,10,2025-05-21,Cash,1.7
+INV-00055,A,Lucknow,Fashion,61.42,1,2025-03-08,Credit Card,1.2
+INV-00056,C,Lucknow,Electronics,65.29,1,2025-09-10,UPI,3.9
+INV-00057,C,Agra,Fashion,32.93,3,2025-02-19,Cash,3.3
+INV-00058,C,Lucknow,Electronics,57.53,10,2025-10-11,Credit Card,8.6
+INV-00059,A,Lucknow,Health,37.68,10,2025-12-01,UPI,4.0
+INV-00060,A,Lucknow,Grocery,61.94,8,2025-04-27,Credit Card,2.3
+INV-00061,B,Lucknow,Electronics,50.6,10,2025-11-02,Cash,4.4
+INV-00062,B,Lucknow,Electronics,56.39,3,2025-03-07,UPI,1.2
+INV-00063,C,Kanpur,Electronics,44.05,1,2025-03-14,Cash,3.0
+INV-00064,A,Kanpur,Electronics,38.68,6,2025-07-28,Credit Card,7.6
+INV-00065,A,Agra,Health,23.03,5,2025-04-19,UPI,1.1
+INV-00066,B,Kanpur,Fashion,59.06,4,2025-05-06,UPI,5.2
+INV-00067,C,Kanpur,Electronics,77.29,4,2025-08-05,Credit Card,1.2
+INV-00068,A,Kanpur,Grocery,16.66,2,2025-04-25,Credit Card,4.5
+INV-00069,C,Lucknow,Electronics,53.23,7,2025-01-22,Cash,3.1
+INV-00070,A,Agra,Fashion,86.2,10,2025-06-17,Credit Card,2.2
+INV-00071,A,Lucknow,Electronics,16.92,2,2025-02-15,UPI,5.7
+INV-00072,C,Kanpur,Grocery,24.55,7,2025-01-01,Cash,8.0
+INV-00073,C,Lucknow,Grocery,73.12,4,2025-10-01,Credit Card,6.4
+INV-00074,A,Agra,Fashion,82.22,7,2025-04-28,UPI,1.2
+INV-00075,C,Kanpur,Electronics,55.93,3,2025-09-20,Cash,5.6
+INV-00076,C,Agra,Electronics,85.19,8,2025-05-08,Cash,8.9
+INV-00077,B,Lucknow,Grocery,81.49,7,2025-04-17,UPI,7.7
+INV-00078,A,Agra,Fashion,18.78,5,2025-11-01,UPI,3.3
+INV-00079,B,Kanpur,Health,56.06,6,2025-06-17,Cash,3.1
+INV-00080,A,Lucknow,Fashion,69.23,10,2025-04-22,Credit Card,7.9
+INV-00081,A,Kanpur,Electronics,62.35,6,2025-03-23,Credit Card,2.8
+INV-00082,C,Agra,Fashion,43.81,9,2025-08-23,UPI,6.9
+INV-00083,A,Agra,Fashion,67.82,3,2025-05-17,UPI,3.7
+INV-00084,B,Agra,Electronics,21.18,5,2025-01-25,Credit Card,6.1
+INV-00085,A,Kanpur,Electronics,53.68,2,2025-01-22,Credit Card,5.7
+INV-00086,C,Lucknow,Fashion,81.39,10,2025-04-12,Credit Card,9.1
+INV-00087,A,Agra,Grocery,78.5,1,2025-02-28,Credit Card,7.1
+INV-00088,C,Lucknow,Health,43.98,1,2025-01-16,Cash,6.1
+INV-00089,C,Lucknow,Health,80.96,10,2025-11-16,Cash,8.4
+INV-00090,B,Kanpur,Health,73.59,10,2025-09-18,Cash,9.0
+INV-00091,C,Kanpur,Electronics,82.59,10,2025-12-07,Credit Card,6.9
+INV-00092,B,Lucknow,Grocery,43.09,2,2025-10-14,Credit Card,8.7
+INV-00093,B,Agra,Fashion,85.03,4,2025-11-01,UPI,3.0
+INV-00094,A,Kanpur,Health,97.65,2,2025-06-13,Credit Card,8.9
+INV-00095,B,Agra,Fashion,67.3,10,2025-05-05,UPI,2.7
+INV-00096,A,Agra,Grocery,41.89,4,2025-02-20,UPI,9.1
+INV-00097,A,Kanpur,Grocery,15.52,10,2025-12-17,UPI,5.2
+INV-00098,B,Kanpur,Health,21.47,1,2025-01-08,Credit Card,7.2
+INV-00099,B,Kanpur,Fashion,41.22,5,2025-09-19,UPI,8.0
+INV-00100,C,Agra,Fashion,85.42,7,2025-08-27,Cash,7.9
+INV-00101,C,Kanpur,Grocery,20.51,4,2025-01-01,Cash,2.9
+INV-00102,B,Kanpur,Electronics,63.81,4,2025-02-05,UPI,8.2
+INV-00103,C,Agra,Fashion,99.07,7,2025-07-10,UPI,8.1
+INV-00104,B,Agra,Grocery,30.67,9,2025-03-16,Cash,1.5
+INV-00105,B,Agra,Electronics,65.43,6,2025-10-25,Cash,9.8
+INV-00106,A,Kanpur,Grocery,54.4,5,2025-01-23,Cash,8.5
+INV-00107,B,Lucknow,Electronics,90.77,10,2025-06-26,Credit Card,1.7
+INV-00108,C,Lucknow,Electronics,93.88,4,2025-10-13,Cash,1.4
+INV-00109,C,Kanpur,Electronics,37.63,2,2025-06-10,Credit Card,6.5
+INV-00110,B,Lucknow,Grocery,66.25,7,2025-01-14,UPI,5.8
+INV-00111,B,Kanpur,Electronics,13.07,3,2025-02-16,Credit Card,7.6
+INV-00112,B,Kanpur,Health,96.56,4,2025-05-18,Cash,8.4
+INV-00113,B,Agra,Fashion,81.3,6,2025-10-09,Credit Card,4.9
+INV-00114,B,Kanpur,Health,47.7,9,2025-05-12,Credit Card,1.9
+INV-00115,C,Kanpur,Electronics,92.59,3,2025-07-02,UPI,4.6
+INV-00116,C,Agra,Health,65.99,7,2025-05-17,Credit Card,9.8
+INV-00117,C,Kanpur,Health,96.87,8,2025-04-10,Credit Card,6.4
+INV-00118,B,Agra,Electronics,28.54,2,2025-10-23,UPI,5.9
+INV-00119,C,Kanpur,Electronics,42.94,2,2025-07-12,UPI,7.6
+INV-00120,B,Lucknow,Electronics,92.73,3,2025-05-09,Cash,4.5
+INV-00121,A,Lucknow,Electronics,20.93,10,2025-12-12,Credit Card,1.3
+INV-00122,B,Kanpur,Electronics,14.38,10,2025-09-24,Credit Card,6.3
+INV-00123,B,Lucknow,Health,42.51,5,2025-12-24,Cash,8.7
+INV-00124,C,Kanpur,Grocery,60.11,8,2025-12-11,Cash,5.5
+INV-00125,A,Agra,Electronics,91.95,10,2025-03-08,Credit Card,8.8
+INV-00126,A,Lucknow,Electronics,61.13,3,2025-11-28,Cash,6.0
+INV-00127,A,Kanpur,Grocery,61.35,6,2025-08-08,UPI,5.1
+INV-00128,A,Agra,Fashion,94.73,5,2025-01-24,UPI,5.7
+INV-00129,B,Lucknow,Health,11.69,8,2025-10-18,UPI,7.5
+INV-00130,B,Lucknow,Fashion,80.63,8,2025-07-28,Credit Card,3.6
+INV-00131,A,Kanpur,Fashion,49.42,2,2025-01-07,Credit Card,5.8
+INV-00132,B,Kanpur,Health,88.92,5,2025-01-04,Credit Card,6.4
+INV-00133,A,Lucknow,Health,94.23,4,2025-01-13,Credit Card,8.5
+INV-00134,B,Lucknow,Fashion,89.07,2,2025-07-03,Cash,2.9
+INV-00135,A,Lucknow,Health,24.55,1,2025-10-20,UPI,4.1
+INV-00136,B,Kanpur,Grocery,91.0,1,2025-08-13,Cash,1.4
+INV-00137,C,Lucknow,Electronics,50.49,4,2025-02-06,Credit Card,1.3
+INV-00138,A,Lucknow,Electronics,74.02,1,2025-03-02,UPI,5.7
+INV-00139,C,Lucknow,Health,75.94,10,2025-01-18,Cash,3.3
+INV-00140,C,Kanpur,Electronics,68.77,2,2025-12-22,Credit Card,1.9
+INV-00141,A,Kanpur,Grocery,57.0,2,2025-03-01,Cash,1.1
+INV-00142,B,Lucknow,Grocery,48.49,5,2025-10-16,Cash,9.5
+INV-00143,B,Kanpur,Fashion,57.99,1,2025-11-26,Credit Card,6.8
+INV-00144,A,Agra,Grocery,53.82,8,2025-06-07,Cash,6.4
+INV-00145,C,Kanpur,Health,21.14,8,2025-09-20,Cash,5.9
+INV-00146,A,Kanpur,Grocery,10.78,4,2025-05-04,Cash,7.6
+INV-00147,B,Agra,Health,37.34,3,2025-06-27,Credit Card,3.5
+INV-00148,A,Kanpur,Electronics,50.55,2,2025-06-22,Cash,2.5
+INV-00149,A,Kanpur,Electronics,12.78,2,2025-08-07,UPI,7.1
+INV-00150,C,Lucknow,Grocery,69.23,1,2025-12-12,Credit Card,1.2
+INV-00151,B,Agra,Fashion,49.23,7,2025-01-01,Credit Card,6.9
+INV-00152,C,Kanpur,Health,81.17,10,2025-07-18,Cash,9.1
+INV-00153,B,Agra,Grocery,72.39,9,2025-01-20,Credit Card,7.6
+INV-00154,B,Kanpur,Health,97.97,10,2025-05-05,Cash,3.9
+INV-00155,B,Lucknow,Fashion,33.09,7,2025-12-23,Credit Card,2.6
+INV-00156,B,Lucknow,Fashion,25.27,1,2025-09-20,Cash,8.1
+INV-00157,C,Agra,Electronics,30.16,2,2025-06-02,UPI,5.7
+INV-00158,C,Kanpur,Electronics,67.0,9,2025-12-19,Credit Card,1.0
+INV-00159,A,Kanpur,Grocery,54.61,3,2025-10-12,UPI,1.8
+INV-00160,B,Agra,Electronics,52.9,8,2025-05-20,Cash,3.3
+INV-00161,A,Kanpur,Fashion,86.72,10,2025-11-11,Cash,7.6
+INV-00162,B,Agra,Fashion,99.52,2,2025-10-25,UPI,10.0
+INV-00163,C,Lucknow,Health,42.1,7,2025-09-22,Credit Card,7.0
+INV-00164,B,Lucknow,Grocery,54.32,1,2025-04-06,Cash,3.6
+INV-00165,B,Lucknow,Health,51.86,6,2025-09-23,UPI,2.4
+INV-00166,B,Agra,Electronics,47.56,9,2025-07-06,Credit Card,4.5
+INV-00167,A,Kanpur,Health,15.37,2,2025-01-21,Credit Card,4.0
+INV-00168,C,Kanpur,Fashion,92.31,8,2025-02-17,Cash,3.7
+INV-00169,B,Lucknow,Electronics,50.69,3,2025-12-15,Credit Card,8.7
+INV-00170,B,Kanpur,Grocery,38.51,7,2025-01-28,UPI,2.5
+INV-00171,B,Lucknow,Fashion,20.77,6,2025-02-16,Cash,4.1
+INV-00172,A,Kanpur,Health,79.98,9,2025-12-13,Cash,5.3
+INV-00173,C,Agra,Grocery,80.93,9,2025-06-02,Credit Card,8.4
+INV-00174,A,Kanpur,Electronics,55.23,7,2025-12-17,UPI,1.8
+INV-00175,A,Kanpur,Health,51.91,9,2025-09-01,Credit Card,3.1
+INV-00176,A,Agra,Health,27.88,8,2025-03-06,UPI,3.4
+INV-00177,B,Kanpur,Fashion,43.28,9,2025-02-27,UPI,8.0
+INV-00178,B,Agra,Electronics,58.74,9,2025-06-25,Cash,9.7
+INV-00179,A,Lucknow,Health,49.17,8,2025-08-28,Cash,3.2
+INV-00180,B,Lucknow,Grocery,35.47,5,2025-07-28,Credit Card,4.2
+INV-00181,B,Lucknow,Health,80.35,3,2025-01-04,Credit Card,3.9
+INV-00182,C,Kanpur,Grocery,82.44,9,2025-05-06,Cash,5.5
+INV-00183,C,Kanpur,Electronics,58.83,2,2025-07-27,UPI,1.5
+INV-00184,B,Lucknow,Electronics,41.29,5,2025-10-21,Cash,6.6
+INV-00185,B,Lucknow,Fashion,69.73,10,2025-12-09,UPI,7.8
+INV-00186,B,Lucknow,Electronics,99.88,10,2025-02-20,Cash,1.4
+INV-00187,A,Lucknow,Grocery,55.86,8,2025-02-23,Cash,1.8
+INV-00188,C,Lucknow,Electronics,12.47,2,2025-06-14,UPI,8.1
+INV-00189,A,Agra,Grocery,64.54,1,2025-06-19,Cash,9.1
+INV-00190,C,Kanpur,Health,93.13,7,2025-07-13,Cash,1.5
+INV-00191,C,Agra,Electronics,10.37,10,2025-11-02,Credit Card,1.2
+INV-00192,B,Kanpur,Grocery,99.87,2,2025-08-15,Cash,3.8
+INV-00193,A,Kanpur,Health,38.64,6,2025-10-17,Credit Card,4.5
+INV-00194,B,Agra,Grocery,95.86,1,2025-01-25,UPI,2.7
+INV-00195,A,Agra,Health,48.57,7,2025-12-22,UPI,5.0
+INV-00196,C,Lucknow,Fashion,34.77,10,2025-03-06,Cash,6.3
+INV-00197,B,Agra,Electronics,90.64,10,2025-11-03,UPI,9.5
+INV-00198,B,Lucknow,Electronics,89.14,2,2025-08-21,Credit Card,8.9
+INV-00199,C,Kanpur,Health,77.53,8,2025-12-16,Cash,6.3
+INV-00200,C,Kanpur,Fashion,67.57,7,2025-09-01,Credit Card,6.2
