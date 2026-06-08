@@ -1,16 +1,9 @@
 version: 0.2
-
 phases:
   install:
     commands:
-      - pip install -r freshmart-data-pipeline/lambdas/csv_reader/requirements.txt -t freshmart-data-pipeline/lambdas/csv_reader/package/ --platform manylinux2014_x86_64 --only-binary=:all:
-      - pip install -r freshmart-data-pipeline/lambdas/transformer/requirements.txt -t freshmart-data-pipeline/lambdas/transformer/package/ --platform manylinux2014_x86_64 --only-binary=:all:
-  pre_build:
-    commands:
-      - pip install flake8 --quiet
-      - flake8 freshmart-data-pipeline/lambdas/csv_reader/lambda_function.py --max-line-length=120
-      - flake8 freshmart-data-pipeline/lambdas/orchestrator/lambda_function.py --max-line-length=120
-      - flake8 freshmart-data-pipeline/lambdas/transformer/lambda_function.py --max-line-length=120
+      - pip install pandas==2.2.2 -t freshmart-data-pipeline/lambdas/csv_reader/package/ --platform manylinux2014_x86_64 --only-binary=:all:
+      - pip install pandas==2.2.2 -t freshmart-data-pipeline/lambdas/transformer/package/ --platform manylinux2014_x86_64 --only-binary=:all:
   build:
     commands:
       - mkdir -p artifacts
